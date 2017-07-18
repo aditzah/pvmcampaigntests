@@ -1,0 +1,31 @@
+{
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost",
+      "browser": "chrome"
+    },
+    "SeleniumWebdriver": {
+      "url": "http://localhost",
+      "browser": "chrome"
+    },
+    "Nightmare": {
+      "url": "http://localhost",
+      "show": true
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "testusers": "./pages/testusers.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "suite",
+  "multiple": {
+    "basic": {
+      "browsers": ["chrome"]
+    }
+  }
+}
